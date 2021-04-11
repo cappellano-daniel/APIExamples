@@ -1,0 +1,5 @@
+<input type="text" placeholder="Enter Artist" [(ngModel)]="artist"/>
+<input type="text" placeholder="Enter Song Name" [(ngModel)]="title"/>
+<button (click)="artistByName()">Search</button>
+
+{{ (songs | async)?.lyrics }}
